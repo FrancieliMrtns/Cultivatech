@@ -1,0 +1,97 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-image: url('/Projeto-Cultivatech-Precision/Imagens/uma-planta-crescendo-no-solo-com-o-sol-brilhando-sobre-ela.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adicione estas regras CSS para estilizar o retângulo */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px; /* Ajuste a altura da barra de tarefas conforme necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+    z-index: 1; /* Para garantir que o retângulo esteja acima da imagem */
+}
+
+/* Estilize o texto dentro do retângulo */
+.P {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Ajusta a posição para o canto superior direito */
+    font-size: 25px; /* Ajuste o tamanho da fonte conforme desejado */
+    transform: translate(0, -50%); /* Centralize verticalmente */
+    color: white; /* Cor do texto branco */
+}
+
+.P p {
+    color: white;
+    display: inline;
+    margin-right: 10px;
+    padding: 27px 10px; /* Tamanho do retângulo */
+    border-radius: 5px; /* Cantos arredondados se desejado */
+}
+
+/* Estilize o retângulo transparente ao passar o mouse sobre os elementos <p> */
+.P p:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+}
+
+
+h1 {
+    position: absolute;
+    top: 20%; /* Ajuste a posição vertical conforme necessário */
+    left: 32px; /* Ajuste a posição horizontal (distância da esquerda) conforme necessário */
+    color: white;
+    font-size: 70px;
+    transform: scaleY(1.1);
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 40px; /* Tamanho do título h2 */
+    position: absolute;
+    left: 10px; /* Ajuste a posição horizontal (distância da esquerda) conforme necessário */
+    top: 45%; /* Ajuste a posição vertical para estar alinhado com o meio do container */
+    transform: translate(0, 50%); /* Move o h2 para baixo de forma que fique alinhado com o meio */
+    color: white;
+    font-size: 30px;
+    font-weight: 20;
+    letter-spacing: 2px;
+    left: 32px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; 
+        transform: scaleY(1); 
+        top: 10%; 
+    }
+
+    h2 {
+        font-size: 20px; 
+        top: 25%; 
+        transform: translate(0, 0); 
+    }
+
+    .P p {
+        padding: 12px 10px; 
+    }
+}

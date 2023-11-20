@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cultivatech-precision</title>
+    <link rel="stylesheet" href="../Estilos/Login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="../Imagens/uma-planta-crescendo-no-solo-com-o-sol-brilhando-sobre-ela.jpg" alt="Planta crescendo">
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>USER LOGIN</h1>
+            <form action="./API.html" id="form" class="form">
+                <input
+                    type="text"
+                    id="email"
+                    class="larger-input"
+                    placeholder="E-MAIL ID"
+                    required>
+                <br>
+                <input
+                    type="password"
+                    id="senha"
+                    class="larger-input"
+                    placeholder="PASSWORD"
+                    required>
+                <div class="checkbox">
+                    <input type="checkbox" id="mantenha_conectado">
+                    <label for "mantenha_conectado">Mantenha-me Logado</label>
+                </div>
+                <div class="button-container">
+                    <a href="../CalendarioAnalise/index.html">
+                        <button type="button" class="login-button" id="login-button">LOGIN</button>
+                    </a>
+                    <a href="../Paginas/Register.html" class="register-link">
+                        <button type="button" class="register-button">REGISTER</button>
+                    </a>
+                </div>                    
+            </form>
+        </div>
+        <div class="gray-box"></div>
+        <div class="rectangle"></div>
+    </div>
+</body>
+</html>
